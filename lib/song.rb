@@ -50,6 +50,9 @@ def self.find_or_create_by_name(name)
   def self.new_from_filename(filename)
     song = self.new
     song.name = (filename.split(" - ")[1].chomp(".mp3"))
+    #Separate the filename at the "-" and split into an array of two Objectives
+    #[1] is the song name
+    #[0] is the artist name
     song.artist_name = (filename.split(" - ")[0])
     song
   end
