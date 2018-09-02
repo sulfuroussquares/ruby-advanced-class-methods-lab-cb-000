@@ -57,7 +57,7 @@ def self.find_or_create_by_name(name)
     song
   end
 
-  def self.create_from_filename(name)
+  def self.create_from_filename(filename)
   #class method should not only parse the filename correctly but should also save the song
     song = self.new
     song.name = (name.split(" - ")[1].chomp(".mp3"))
