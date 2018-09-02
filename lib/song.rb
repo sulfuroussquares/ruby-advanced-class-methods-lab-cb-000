@@ -67,4 +67,6 @@ def self.find_or_create_by_name(name)
     song
   end
 
+  def self.destroy_all
+
 end
