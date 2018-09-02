@@ -65,6 +65,7 @@ def self.find_or_create_by_name(name)
     #[0] is the artist name
     song.artist_name = (filename.split(" - ")[0])
     @@all << song
+    #retain the song in the @@all variable
     song
   end
 
